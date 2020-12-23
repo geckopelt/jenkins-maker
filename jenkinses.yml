@@ -7,15 +7,14 @@
     jenkins_hostname: "{{ inventory_hostname }}"
     jenkins_port: 8080
     jenkins_install_via: "apt"
-#    jenkins_jobs:
-#      - "my-first-job"
-#      - "another-awesome-job"
+    jenkins_jobs:
+      - "Hello"
 #    jenkins_include_secrets: true
 #    jenkins_include_custom_files: true
 #    jenkins_custom_files:
 #      - src: "jenkins.plugins.openstack.compute.UserDataConfig.xml"
 #        dest: "jenkins.plugins.openstack.compute.UserDataConfig.xml"
-    jenkins_plugins:
+#    jenkins_plugins:
 #      - git
     jenkins_home: /mnt/efs
     jenkins_config_owner: jenkins 
