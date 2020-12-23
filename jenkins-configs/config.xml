@@ -3,7 +3,7 @@
   <disabledAdministrativeMonitors/>
   <version>2.176.1</version>
   <installStateName>RESTART</installStateName>
-  <numExecutors>1</numExecutors>
+  <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
