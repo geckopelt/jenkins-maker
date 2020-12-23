@@ -16,6 +16,10 @@
     jenkins_home: /mnt/efs
     jenkins_config_owner: jenkins 
     jenkins_config_group: jenkins
+    jenkins_https_validate_certs: false
+    jenkins_auth: "api"
+    jenkins_api_token: 1afd4d158194f050a2ea6b08752fd877
+    jenkins_api_username: demo
 
   roles:
     - emmetog.jenkins
