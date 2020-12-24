@@ -1,0 +1,19 @@
+- hosts: proxies
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks:
+    - name: Check for latest Nginx version
+      apt: name=nginx state=latest
+    - name: Start Nginx
+      service:
+          name: nginx
+          state: started
+    - name: Update Nginx config
+      copy:
+        src: nginx/nginx.conf
+        dest: /etc/nginx/nginx.conf
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted

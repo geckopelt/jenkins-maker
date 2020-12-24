@@ -1,0 +1,19 @@
+pipeline {
+    agent {
+        node {
+            label 'ansible'
+        }
+    }
+    stages {
+        stage('Prepare HA Proxy/Proxies') {
+            steps {
+              ansiColor('xterm') {
+                ansiblePlaybook( 
+                  playbook: 'proxies.yml',
+                  inventory: 'ansible/hosts', 
+                  colorized: true) 
+              }
+            }
+        }
+    }
+}
