@@ -7,6 +7,6 @@
 Заходим в корневой <a href="http://jenkins0.abelyakov.me:8080">Jenkins</a> (логин и пароль в личке)
 
 Задача <a href="http://jenkins0.abelyakov.me:8080/job/SetupJenkinses/">"Настройка Jenkins-серверов через Ansible"</a> разворачивает два игрушечных Jenkins, 
-с преконфигурированным пользователем demo и преконфигурированной джобой <a href="http://jenkins1.abelyakov.me:8080">"Hello"</a>
+с преконфигурированным пользователем demo и преконфигурированной джобой <a href="http://jenkins1.abelyakov.me:8080/jobs/Hello">"Hello"</a>
 
 URL'ы серверов: <a href="http://jenkins1.abelyakov.me:8080">первый</a>, <a href="http://jenkins2.abelyakov.me:8080">второй</a>
